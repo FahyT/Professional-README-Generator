@@ -1,15 +1,32 @@
 # test
   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
+  ## Table of Contents
+  1. [Description](#description)
+  2. [Installation](#installation)
+  3. [Usage](#usage)  
+  4. [Contributing](#contributing)
+  5. [Tests](#tests)
+  6. [Questions](#questions)
+  7. [License](#license)
+  
   ## Description
   test
 
   ## Installation
+  test
+  
+  ## Usage
+  test
+  
+  ## Contributing
+  test
+  
+  ## Tests
+  test
 
-  ## Usage 
-
-  ## Credits
-
+  ## Questions
+  If developers or users have any questions, they can contact me via https://github.com/FahyT or thomas.fahy9@gmail.com.
+  
   ## License
   GNU GENERAL PUBLIC LICENSE - Version 3, 29 June 2007
 

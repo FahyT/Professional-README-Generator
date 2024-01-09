@@ -12,7 +12,7 @@ const questions = [
       },
       {
         type: 'input',
-        message: 'Enter a short description of your project: ',
+        message: 'Enter a short description of your project:',
         name: 'description',
       },
       {
@@ -43,7 +43,7 @@ const questions = [
       },
       {
         type: 'input',
-        message: 'Please add a link to your github profile:',
+        message: 'Please enter your github username:',
         name: 'github',
       },
       {

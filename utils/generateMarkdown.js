@@ -3,27 +3,32 @@ function generateMarkdown(data) {
   return `# ${data.title}
   ${licenseBadge(data.license)}
   ## Table of Contents
+  1. [Description](#description)
+  2. [Installation](#installation)
+  3. [Usage](#usage)  
+  4. [Contributing](#contributing)
+  5. [Tests](#tests)
+  6. [Questions](#questions)
+  7. [License](#license)
   
   ## Description
   ${data.description}
 
   ## Installation
   ${data.install}
-
+  
   ## Usage
-  ${data.use}
-
-  ## Contribute
+  ${data.usage}
+  
+  ## Contributing
   ${data.contribute}
-
+  
   ## Tests
   ${data.test}
 
   ## Questions
-  If developers or users have any questions, they can contact me at:
-  Github - ${data.github}
-  Email - ${data.email}
-
+  If developers or users have any questions, they can contact me via https://github.com/${data.github} or ${data.email}.
+  
   ## License
   ${licenseText(data.license)}
 `;
