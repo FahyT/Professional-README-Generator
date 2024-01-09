@@ -31,8 +31,9 @@ const questions = [
         name: 'test',
       },
       {
-        type: 'input', //find correct type from inquirer logic
+        type: 'list',
         message: 'Choose a license for your project:',
+        choices: ['MIT', 'Apache', 'GNU', 'BSD'], 
         name: 'license',
       },
       {
@@ -49,6 +50,10 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    const markdown = generateMarkdown(data);
+    fs.writeFile('./tests/README.md', markdown, (err) =>
+        err ? console.error(err) : console.log('Success!')
+    );
 }
 
 // function to initialize program
@@ -56,7 +61,7 @@ function init() {
     inquirer
     .prompt(questions)
     .then((answers) => {
-        console.log(answers.title)
+        //console.log(answers.title)
       })
 }
 
