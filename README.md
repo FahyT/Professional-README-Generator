@@ -6,6 +6,8 @@ Creates a command-line application that dynamically generates a professional REA
 
 A CLI application written in javascript using node.JS runtime. When run from the command line it will provide users with a series of questions and then generate a readme file based on their answers.
 
+See a walkthrough video here: ![readme app walkthrough](https://drive.google.com/file/d/11ZmcwUVgeLJBHk0_qFoWW3BwqWaIQgfJ/view)
+
 ## Installation
 
 To use the application, first install node and npm. You will need to install the dependencies in package.JSON using npm.

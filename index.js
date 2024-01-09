@@ -57,7 +57,7 @@ const questions = [
 function writeToFile(fileName, data) {
     const markdown = generateMarkdown(data);
     fs.writeFile(`./output/${fileName}`, markdown, (err) =>
-        err ? console.error(err) : console.log('Success!')
+        err ? console.error(err) : console.log('Success! Your read-me has been saved to the outputs folder.')
     )
 }
 
