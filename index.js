@@ -8,7 +8,7 @@ const questions = [
     {
         type: 'input',
         message: 'What is the title of your project?',
-        name: 'project',
+        name: 'title',
       },
       {
         type: 'input',
@@ -53,7 +53,11 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+    inquirer
+    .prompt(questions)
+    .then((answers) => {
+        console.log(answers.title)
+      })
 }
 
 // function call to initialize program
