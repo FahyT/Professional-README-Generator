@@ -39,21 +39,21 @@ const questions = [
       {
         type: 'input',
         message: 'Please add a link to your github profile:',
-        name: 'license',
+        name: 'github',
       },
       {
         type: 'input', 
         message: 'Please add your email:',
-        name: 'license',
+        name: 'email',
       },
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
     const markdown = generateMarkdown(data);
-    fs.writeFile('./tests/README.md', markdown, (err) =>
+    fs.writeFile(`./output/${fileName}`, markdown, (err) =>
         err ? console.error(err) : console.log('Success!')
-    );
+    )
 }
 
 // function to initialize program
@@ -61,7 +61,7 @@ function init() {
     inquirer
     .prompt(questions)
     .then((answers) => {
-        //console.log(answers.title)
+        writeToFile('README.md', answers)
       })
 }
 
